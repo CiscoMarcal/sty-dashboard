@@ -1,0 +1,18 @@
+{
+  "name": "app-sty",
+  "version": "1.0.0",
+  "description": "Aplicativo de gerenciamento financeiro para clisntes Setydeias.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Neto Marçal",
+  "license": "ISC",
+  "dependencies": {
+    "@adminjs/express": "^5.0.1",
+    "adminjs": "^6.6.1",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "tslib": "^2.4.1"
+  }
+}
