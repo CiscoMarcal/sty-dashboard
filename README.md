@@ -1,2 +1,2 @@
 # sty-dashboard
-Aplicativo para gerenciamento financeiro para clientes Setydeias
+Aplicativo de gerenciamento financeiro para clientes Setydeias
