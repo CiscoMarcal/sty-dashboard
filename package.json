@@ -4,15 +4,27 @@
   "description": "Aplicativo de gerenciamento financeiro para clisntes Setydeias.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./src/server.js"
   },
   "author": "Neto Marçal",
   "license": "ISC",
   "dependencies": {
     "@adminjs/express": "^5.0.1",
+    "@adminjs/sequelize": "^3.0.0",
     "adminjs": "^6.6.1",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-formidable": "^1.2.0",
+    "express-session": "^1.17.3",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.25.5",
     "tslib": "^2.4.1"
+  },
+  "DevDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "sequelize-cli": "^6.5.2",
+    "sucrase": "^3.28.0"
   }
 }
