@@ -4,7 +4,10 @@ import AdminJS from 'adminjs';
 import AdminJSExpress from '@adminjs/express';
 import AdminJSSequelize from '@adminjs/sequelize';
 import express from 'express';
+
 import UsersResource from './resources/UsersResource';
+import ProjectsResource from "./resources/ProjectsResource";
+
 import locale from './locales';
 
 AdminJS.registerAdapter(AdminJSSequelize);
@@ -14,7 +17,10 @@ const app = express();
 const adminJS = new AdminJS({
     tadabases: [],
     rootPath: '/admin',
-    resources: [UsersResource],
+    resources: [
+        UsersResource, 
+        ProjectsResource
+    ],
     ...locale,
 });
 
