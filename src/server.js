@@ -4,6 +4,7 @@ import AdminJS from 'adminjs';
 import AdminJSExpress from '@adminjs/express';
 import AdminJSSequelize from '@adminjs/sequelize';
 import express from 'express';
+import UsersResource from './resources/UsersResource';
 
 AdminJS.registerAdapter(AdminJSSequelize);
 
@@ -12,7 +13,27 @@ const app = express();
 const adminJS = new AdminJS({
     tadabases: [],
     rootPath: '/admin',
-    resources: []
+    resources: [UsersResource],
+    locale: {
+        translations: {
+            actions: {
+                new: 'Criar novo',
+            },
+            labels: {
+                users: 'Usuários',
+            },
+            resources: {
+                users: {
+                    actions: {
+                        resetPassword: 'Redefinir senha'
+                    },
+                    properties: {
+                        name: 'Nome',
+                    }
+                }
+            }
+        }
+    }
 });
 
 const router = AdminJSExpress.buildRouter(adminJS);
