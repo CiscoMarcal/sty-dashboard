@@ -4,7 +4,9 @@
   "description": "Aplicativo de gerenciamento financeiro para clisntes Setydeias.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:undo": "equelize-cli db:migrate:undo",
   },
   "author": "Neto Marçal",
   "license": "ISC",
