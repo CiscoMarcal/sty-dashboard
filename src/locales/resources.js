@@ -19,5 +19,14 @@ export default {
             role: 'Perfil',
             ...commonProps,
         },
+    },
+    projects: {
+        properties: {
+            id: 'ID',
+            name: 'Nome',
+            description: 'Descrição',
+            userId: 'Responsável',
+            ...commonProps,
+        },
     }
 }
